@@ -10,6 +10,8 @@ Workflow {
 	// read the uml2 model file
 	component = org.genesez.workflow.EmfReader {
 		file = "model/example.uml"
+		//file = "model/TBP.uml"
+		
 		slot = "uml2model"
 	}
 	// validate the uml2 model for transformability
@@ -80,7 +82,7 @@ Workflow {
 			metaModel = gcore
 			
 			// directory in which the generated files are placed
-			outputDir = "../org.genesez.example.java.car/src-gen"
+			outputDir = "../de.fh-zwickau.dev.java.TBP/src-gen"
 			
 			importPreserverConfig = org.genesez.platform.java.workflow.JavaImportPreserverConfig {}
 			postProcessor = org.genesez.platform.java.workflow.GeneSezJavaPostProcessor {}
